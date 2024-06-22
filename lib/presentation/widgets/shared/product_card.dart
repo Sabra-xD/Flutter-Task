@@ -32,17 +32,14 @@ class ProductCard extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
-                    // width: containerWidth,
                     height: containerWidth * 0.8,
-                    // height: containerWidth * 0.8,
                     width: containerWidth,
                     imageUrl,
                     fit: BoxFit.cover,
                   ),
                 ),
                 Positioned(
-                    bottom: size.height * 0.1,
-                    right: -size.width * 0.03,
+                    right: -containerWidth * 0.1,
                     child: IconButton(
                       icon: const Icon(
                         Iconsax.heart_circle5,

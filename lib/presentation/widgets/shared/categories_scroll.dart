@@ -12,7 +12,7 @@ class CategoriesNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -39,6 +39,7 @@ class CategoriesNav extends StatelessWidget {
         Expanded(
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
+            shrinkWrap: true,
             itemCount: categories.length,
             itemBuilder: (context, index) {
               return CategoryCard(

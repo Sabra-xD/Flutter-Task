@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     const bool isWeb = bool.fromEnvironment('dart.library.js_util');
-    final bool mobileScreen = screenWidth < 600; // Adjust breakpoint as needed
+    final bool mobileScreen = screenWidth < 600;
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
